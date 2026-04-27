@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TorqueTrail - Available Cars</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo"><span class="logo-mark">TT</span> TorqueTrail</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cars.html" class="active">Cars</a></li>
+      <li><a href="booking.html">Book Now</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="php/admin.php">Admin</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1>Our Available Cars</h1>
+    <p>Choose the perfect car for your journey</p>
+  </div>
+
+  <!-- Cars Table Section -->
+  <section class="section">
+    <table class="car-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Image</th>
+          <th>Car Name</th>
+          <th>Type</th>
+          <th>Seats</th>
+          <th>Fuel</th>
+          <th>Price / Day</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><img class="table-car-img" src="https://images.unsplash.com/photo-1514316454349-750a7fd3da3a?auto=format&fit=crop&w=500&q=80" alt="Aurora Hatch" loading="lazy" /></td>
+          <td class="car-name">Aurora Hatch</td>
+          <td>Hatchback</td>
+          <td>5</td>
+          <td>Petrol</td>
+          <td>₹1500</td>
+          <td><span class="badge available">Available</span></td>
+          <td><a href="booking.html" class="btn small">Book</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><img class="table-car-img" src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=500&q=80" alt="Terra SUV" loading="lazy" /></td>
+          <td class="car-name">Terra SUV</td>
+          <td>SUV</td>
+          <td>5</td>
+          <td>Diesel</td>
+          <td>₹3000</td>
+          <td><span class="badge available">Available</span></td>
+          <td><a href="booking.html" class="btn small">Book</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><img class="table-car-img" src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=500&q=80" alt="Velocity Sedan" loading="lazy" /></td>
+          <td class="car-name">Velocity Sedan</td>
+          <td>Sedan</td>
+          <td>5</td>
+          <td>Petrol</td>
+          <td>₹2500</td>
+          <td><span class="badge available">Available</span></td>
+          <td><a href="booking.html" class="btn small">Book</a></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><img class="table-car-img" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=500&q=80" alt="Summit MUV" loading="lazy" /></td>
+          <td class="car-name">Summit MUV</td>
+          <td>MUV</td>
+          <td>7</td>
+          <td>Diesel</td>
+          <td>₹4000</td>
+          <td><span class="badge available">Available</span></td>
+          <td><a href="booking.html" class="btn small">Book</a></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><img class="table-car-img" src="https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=500&q=80" alt="Pulse EV" loading="lazy" /></td>
+          <td class="car-name">Pulse EV</td>
+          <td>SUV</td>
+          <td>5</td>
+          <td>Electric</td>
+          <td>₹2800</td>
+          <td><span class="badge available">Available</span></td>
+          <td><a href="booking.html" class="btn small">Book</a></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td><img class="table-car-img" src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=500&q=80" alt="Ranger XUV" loading="lazy" /></td>
+          <td class="car-name">Ranger XUV</td>
+          <td>SUV</td>
+          <td>7</td>
+          <td>Diesel</td>
+          <td>₹3500</td>
+          <td><span class="badge booked">Booked</span></td>
+          <td><button class="btn small disabled" disabled>Unavail.</button></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td><img class="table-car-img" src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=500&q=80" alt="Glide Hatch" loading="lazy" /></td>
+          <td class="car-name">Glide Hatch</td>
+          <td>Hatchback</td>
+          <td>5</td>
+          <td>Petrol</td>
+          <td>₹1800</td>
+          <td><span class="badge available">Available</span></td>
+          <td><a href="booking.html" class="btn small">Book</a></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td><img class="table-car-img" src="https://images.unsplash.com/photo-1542282088-fe8426682b8f?auto=format&fit=crop&w=500&q=80" alt="Crown Sedan" loading="lazy" /></td>
+          <td class="car-name">Crown Sedan</td>
+          <td>Sedan</td>
+          <td>5</td>
+          <td>Petrol</td>
+          <td>₹2700</td>
+          <td><span class="badge available">Available</span></td>
+          <td><a href="booking.html" class="btn small">Book</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 TorqueTrail. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

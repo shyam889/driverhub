@@ -1,0 +1,3 @@
+# TorqueTrail Bookings Data File
+# Format: Timestamp | BookingID: XX | Name: XX | Email: XX | Phone: XX | Car: XX | Pickup: XX | Return: XX | Days: XX | Total: XX | Address: XX
+# This file is automatically updated when a customer submits the booking form.

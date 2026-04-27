@@ -1,0 +1,3 @@
+# TorqueTrail Contact Messages
+# Format: Timestamp | Name: XX | Email: XX | Subject: XX | Message: XX
+# This file is automatically updated when a customer submits the contact form.

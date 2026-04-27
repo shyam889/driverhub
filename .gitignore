@@ -1,0 +1,12 @@
+# Sensitive files
+.env
+*.log
+
+# Data files (optional - exclude if you want to track bookings)
+# data/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

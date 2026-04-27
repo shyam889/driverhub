@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TorqueTrail - Book a Car</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo"><span class="logo-mark">TT</span> TorqueTrail</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cars.html">Cars</a></li>
+      <li><a href="booking.html" class="active">Book Now</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="php/admin.php">Admin</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1>Book a Car</h1>
+    <p>Fill in the details below to reserve your car</p>
+  </div>
+
+  <!-- Booking Form Section -->
+  <section class="section form-section">
+    <form id="bookingForm" action="php/process.php" method="POST" onsubmit="return validateForm()">
+
+      <div class="form-group">
+        <label for="name">Full Name <span class="required">*</span></label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" />
+        <span class="error-msg" id="nameError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address <span class="required">*</span></label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" />
+        <span class="error-msg" id="emailError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number <span class="required">*</span></label>
+        <input type="text" id="phone" name="phone" placeholder="Enter 10-digit phone number" maxlength="10" />
+        <span class="error-msg" id="phoneError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="car">Select Car <span class="required">*</span></label>
+        <select id="car" name="car">
+          <option value="">-- Choose a Car --</option>
+          <option value="Aurora Hatch - ₹1500/day">Aurora Hatch - ₹1500/day</option>
+          <option value="Terra SUV - ₹3000/day">Terra SUV - ₹3000/day</option>
+          <option value="Velocity Sedan - ₹2500/day">Velocity Sedan - ₹2500/day</option>
+          <option value="Summit MUV - ₹4000/day">Summit MUV - ₹4000/day</option>
+          <option value="Pulse EV - ₹2800/day">Pulse EV - ₹2800/day</option>
+          <option value="Glide Hatch - ₹1800/day">Glide Hatch - ₹1800/day</option>
+          <option value="Crown Sedan - ₹2700/day">Crown Sedan - ₹2700/day</option>
+        </select>
+        <span class="error-msg" id="carError"></span>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group half">
+          <label for="pickup">Pickup Date <span class="required">*</span></label>
+          <input type="date" id="pickup" name="pickup" />
+          <span class="error-msg" id="pickupError"></span>
+        </div>
+
+        <div class="form-group half">
+          <label for="return">Return Date <span class="required">*</span></label>
+          <input type="date" id="return" name="return" />
+          <span class="error-msg" id="returnError"></span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Pickup Address</label>
+        <textarea id="address" name="address" rows="3" placeholder="Enter pickup address (optional)"></textarea>
+      </div>
+
+      <button type="submit" class="btn full-btn">Confirm Booking</button>
+
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 TorqueTrail. All rights reserved.</p>
+  </footer>
+
+  <script src="js/validation.js"></script>
+</body>
+</html>
