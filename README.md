@@ -1,20 +1,19 @@
 # DriveHub
 
-A vehicle booking platform with admin management and contact features.
+DriveHub is a static car rental showcase website built with HTML and CSS.
 
 ## Features
-- Vehicle booking system
-- Contact form
-- Admin dashboard
-- Form validation
-- Booking management
+- Home page with featured cars and highlights
+- Cars page with pricing and availability overview
+- Static booking guide page
+- Static contact information page
+- Responsive layout for mobile and desktop
 
-## Files Structure
+## Project Structure
 - `index.html` - Home page
-- `cars.html` - Available cars listing
-- `booking.html` - Booking form
-- `contact.html` - Contact form
-- `admin.php` - Admin panel
-- `css/style.css` - Styling
-- `js/validation.js` - Form validation
-- `php/process.php` - Backend processing
+- `cars.html` - Cars listing
+- `booking.html` - Booking guide
+- `contact.html` - Contact details
+- `css/style.css` - Main stylesheet
+- `data/bookings.txt` - Sample booking notes
+- `data/contact_messages.txt` - Sample contact notes

@@ -1,5 +1,5 @@
 /* ============================
-  TorqueTrail - Main Stylesheet
+  DriveHub - Main Stylesheet
   ============================ */
 
 /* Reset & Base */
@@ -11,8 +11,11 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f6f9;
-  color: #333;
+  background:
+    radial-gradient(circle at top left, rgba(245, 166, 35, 0.10), transparent 26%),
+    linear-gradient(180deg, #f7f8fb 0%, #f2f4f8 100%);
+  color: #2f3440;
+  line-height: 1.6;
 }
 
 a {
@@ -82,10 +85,20 @@ a {
    Hero Section
    ============================ */
 .hero {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  background:
+    linear-gradient(135deg, rgba(26, 26, 46, 0.96), rgba(15, 52, 96, 0.93)),
+    url('https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1600&q=80') center/cover;
   color: white;
   text-align: center;
   padding: 100px 20px;
+}
+
+.eyebrow {
+  color: #ffd89b;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  margin-bottom: 12px;
 }
 
 .hero-content h1 {
@@ -154,6 +167,13 @@ a {
   margin-bottom: 40px;
   color: #1a1a2e;
   position: relative;
+}
+
+.section-note {
+  text-align: center;
+  color: #606776;
+  max-width: 620px;
+  margin: -28px auto 28px;
 }
 
 .section-title::after {
@@ -263,12 +283,22 @@ a {
 
 .feature-box {
   background-color: #16213e;
-  border: 1px solid #f5a623;
-  color: #f5a623;
+  border: 1px solid rgba(245, 166, 35, 0.55);
+  color: #ffe2b1;
   padding: 12px 22px;
   border-radius: 8px;
   font-weight: 600;
   font-size: 0.95rem;
+}
+
+.secondary-btn {
+  background-color: #ffffff;
+  color: #1a1a2e;
+  border: 1px solid #d8dee9;
+}
+
+.secondary-btn:hover {
+  background-color: #f3f5f9;
 }
 
 /* ============================
@@ -416,6 +446,79 @@ a {
   max-width: 700px;
 }
 
+.booking-guide {
+  max-width: 900px;
+}
+
+.guide-card,
+.booking-card,
+.note-panel,
+.message-card {
+  background: #fff;
+  border: 1px solid #e5e9f1;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(18, 30, 56, 0.06);
+}
+
+.guide-card h2,
+.booking-card h3,
+.note-panel h2,
+.contact-note h3 {
+  color: #1a1a2e;
+  margin-bottom: 12px;
+}
+
+.guide-list {
+  padding-left: 20px;
+  margin: 18px 0;
+  color: #4a5160;
+}
+
+.guide-list li {
+  margin-bottom: 10px;
+}
+
+.guide-note,
+.message-hint {
+  color: #626a79;
+  margin-top: 12px;
+}
+
+.booking-shortcuts {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.booking-grid {
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  padding-top: 0;
+}
+
+.small-note-section {
+  padding-top: 0;
+}
+
+.contact-note {
+  margin-top: 18px;
+  padding: 18px;
+  border-left: 4px solid #f5a623;
+  background: #fff9ef;
+  border-radius: 10px;
+}
+
+.message-card {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .form-group {
   margin-bottom: 20px;
 }
@@ -495,70 +598,10 @@ a {
   color: #444;
 }
 
-.contact-form-wrap {
-  flex: 2;
-  min-width: 300px;
-}
-
 .contact-form-wrap h2 {
   font-size: 1.8rem;
   color: #1a1a2e;
   margin-bottom: 20px;
-}
-
-/* ============================
-   Success / Confirm Box (PHP)
-   ============================ */
-.confirm-box {
-  background: white;
-  border-radius: 12px;
-  padding: 40px;
-  max-width: 700px;
-  margin: 60px auto;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.confirm-box h2 {
-  color: #28a745;
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.confirm-box table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-  text-align: left;
-}
-
-.confirm-box table td {
-  padding: 10px 15px;
-  border-bottom: 1px solid #eee;
-  font-size: 0.95rem;
-}
-
-.confirm-box table td:first-child {
-  font-weight: 600;
-  color: #1a1a2e;
-  width: 40%;
-}
-
-/* ============================
-   Admin Page
-   ============================ */
-.admin-section {
-  padding: 40px;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.admin-section h2 {
-  font-size: 1.8rem;
-  color: #1a1a2e;
-  margin-bottom: 25px;
-  border-left: 5px solid #f5a623;
-  padding-left: 15px;
 }
 
 /* ============================
