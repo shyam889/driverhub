@@ -32,35 +32,95 @@
   <!-- Page Header -->
   <div class="page-header">
     <h1>Book a Car</h1>
-    <p>Quick guide for booking on this static version</p>
+    <p>Fill out the booking form below and share your rental details</p>
   </div>
 
-  <section class="section booking-guide">
-    <div class="guide-card">
-      <h2>How booking works</h2>
-      <ol class="guide-list">
-        <li>Open the Cars page and choose the model you want.</li>
-        <li>Note the daily rate and your preferred pickup and return dates.</li>
-        <li>Share the details through call or email from the Contact page.</li>
-      </ol>
-      <p class="guide-note">
-        This project runs as a fully static site, so there is no live form submission.
-      </p>
-      <div class="booking-shortcuts">
-        <a href="cars.html" class="btn">Browse Cars</a>
-        <a href="contact.html" class="btn secondary-btn">Go to Contact</a>
+  <section class="section booking-layout">
+    <div class="booking-form-wrap">
+      <div class="guide-card">
+        <h2>Booking Form</h2>
+        <p class="guide-note">This is a static form for collecting booking details. No live payment or submission is connected yet.</p>
+
+        <form class="booking-form" action="#" method="post">
+          <div class="form-row">
+            <div class="form-group half">
+              <label for="customer-name">Full Name <span class="required">*</span></label>
+              <input id="customer-name" name="customer-name" type="text" placeholder="Enter your full name" required />
+            </div>
+            <div class="form-group half">
+              <label for="customer-phone">Mobile Number <span class="required">*</span></label>
+              <input id="customer-phone" name="customer-phone" type="tel" placeholder="+91 98765 43210" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="car-model">Car Model <span class="required">*</span></label>
+            <select id="car-model" name="car-model" required>
+              <option value="">Select a car</option>
+              <option>Mercedes-Benz A-Class</option>
+              <option>Toyota Fortuner</option>
+              <option>Honda City</option>
+              <option>Toyota Innova Crysta</option>
+              <option>Tata Nexon EV</option>
+              <option>Mahindra XUV700</option>
+              <option>Hyundai i20</option>
+              <option>Skoda Slavia</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group half">
+              <label for="pickup-date">Pickup Date <span class="required">*</span></label>
+              <input id="pickup-date" name="pickup-date" type="date" required />
+            </div>
+            <div class="form-group half">
+              <label for="return-date">Return Date <span class="required">*</span></label>
+              <input id="return-date" name="return-date" type="date" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group half">
+              <label for="pickup-time">Pickup Time</label>
+              <input id="pickup-time" name="pickup-time" type="time" />
+            </div>
+            <div class="form-group half">
+              <label for="pickup-location">Pickup Location <span class="required">*</span></label>
+              <input id="pickup-location" name="pickup-location" type="text" placeholder="City or address" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Special Requests</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Add driver details, route info, or any special request"></textarea>
+          </div>
+
+          <button type="submit" class="btn full-btn">Request Booking</button>
+        </form>
       </div>
     </div>
-  </section>
 
-  <section class="section booking-grid">
-    <div class="booking-card">
-      <h3>Details to share</h3>
-      <p>Name, mobile number, car name, pickup date, return date, and location.</p>
-    </div>
-    <div class="booking-card">
-      <h3>Before pickup</h3>
-      <p>Carry your driving license and one valid ID for verification at handover.</p>
+    <div class="booking-info-stack">
+      <div class="booking-card">
+        <h3>How booking works</h3>
+        <ol class="guide-list">
+          <li>Select the car you want from the list.</li>
+          <li>Fill in your dates, pickup location, and contact details.</li>
+          <li>Submit the form and share the same details by phone or email for confirmation.</li>
+        </ol>
+      </div>
+      <div class="booking-card">
+        <h3>Before pickup</h3>
+        <p>Carry your driving license and one valid ID for verification at handover.</p>
+      </div>
+      <div class="booking-card">
+        <h3>Need help?</h3>
+        <p>Use the Contact page if you want to confirm availability before sending your booking request.</p>
+        <div class="booking-shortcuts">
+          <a href="cars.html" class="btn">Browse Cars</a>
+          <a href="contact.html" class="btn secondary-btn">Contact Us</a>
+        </div>
+      </div>
     </div>
   </section>
 
